@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: service-deploy-hello-kubernetes
+  #namespace: default
+spec:
+  ports:
+    #Port for ClusterIP
+    #Ingress point to port 8088
+  - port: 8088
+    protocol: TCP
+    #Port for POD
+    targetPort: 8080
+  selector:
+    app: hello-kubernetes
+  type: ClusterIP
