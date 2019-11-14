@@ -5,9 +5,7 @@ kubectl apply -f https://raw.githubusercontent.com/google/metallb/v0.7.3/manifes
 ```
 
 ### Apply Configuration(edit subnet before apply)
-```
-kubectl apply -f https://raw.githubusercontent.com/gonhvvjvo/Public/master/K8S/InstallMetalLB/MetalLB-ConfigMap.yaml
-```
+`kubectl apply -f https://raw.githubusercontent.com/gonhvvjvo/Public/master/K8S/InstallMetalLB/MetalLB-ConfigMap.yaml`
 
 ### To view configuration & subnet
 ```
