@@ -27,14 +27,12 @@ cat <<EOF | sudo tee /opt/scripts/weekly-da-update.sh
 #!/bin/bash
 
 ########## Update all ##########
-#cd /usr/local/directadmin/custombuild
-#./build update
-#./build all d
+#/usr/local/directadmin/custombuild/build update
+#/usr/local/directadmin/custombuild/build all d
 
 
 ########## Update only new version ##########
-cd /usr/local/directadmin/custombuild
-./build update_versions
+/usr/local/directadmin/custombuild/build update_versions
 EOF
 
 chmod +x /opt/scripts/weekly-da-update.sh
