@@ -15,7 +15,7 @@ cat <<EOF | sudo tee /opt/scripts/monthly-yum-update.sh
 yum update -y && yum upgrade -y && reboot
 EOF
 ```
-#### CentOS 7 Script crontab DirectAdmin weekly
+#### CentOS 7 Script crontab update DirectAdmin weekly
 ```
 cat <<EOF | sudo tee /opt/scripts/weekly-da-update.sh
 #!/bin/bash
