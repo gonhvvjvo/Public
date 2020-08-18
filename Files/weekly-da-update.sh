@@ -6,6 +6,6 @@
 #./build all d
 
 
-########## Update version ##########
+########## Update only new version ##########
 cd /usr/local/directadmin/custombuild && \
 ./build update_versions

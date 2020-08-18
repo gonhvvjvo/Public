@@ -15,6 +15,7 @@ cat <<EOF | sudo tee /opt/scripts/monthly-yum-update.sh
 yum update -y && yum upgrade -y && reboot
 EOF
 ```
+#### CentOS 7 Script crontab DirectAdmin weekly
 ```
 cat <<EOF | sudo tee /opt/scripts/weekly-da-update.sh
 #!/bin/bash
@@ -25,7 +26,7 @@ cat <<EOF | sudo tee /opt/scripts/weekly-da-update.sh
 #./build all d
 
 
-########## Update version ##########
+########## Update only new version ##########
 cd /usr/local/directadmin/custombuild && \
 ./build update_versions
 EOF
