@@ -18,6 +18,9 @@ EOF
 
 chmod +x /opt/scripts/monthly-yum-update.sh
 ```
+
+`0 1 17 * * sh /opt/scripts/monthly-yum-update.sh >/dev/null 2>&1`
+
 #### CentOS 7 Script crontab update DirectAdmin weekly
 ```
 cat <<EOF | sudo tee /opt/scripts/weekly-da-update.sh
@@ -36,3 +39,5 @@ EOF
 
 chmod +x /opt/scripts/weekly-da-update.sh
 ```
+
+`0 3 * * 0 sh /opt/scripts/weekly-da-update.sh >/dev/null 2>&1`
