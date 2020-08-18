@@ -8,12 +8,15 @@
 #### CentOS 7 Script crontab yum update monthly
 ```
 mkdir -p /opt/scripts/
+
 cat <<EOF | sudo tee /opt/scripts/monthly-yum-update.sh
 #!/bin/bash
 
 ########## Update all ##########
 yum update -y && yum upgrade -y && reboot
 EOF
+
+chmod +x /opt/scripts/monthly-yum-update.sh
 ```
 #### CentOS 7 Script crontab update DirectAdmin weekly
 ```
@@ -30,4 +33,6 @@ cat <<EOF | sudo tee /opt/scripts/weekly-da-update.sh
 cd /usr/local/directadmin/custombuild && \
 ./build update_versions
 EOF
+
+chmod +x /opt/scripts/weekly-da-update.sh
 ```
