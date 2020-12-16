@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: jumpod-ubuntu
-  namespace: default
+  namespace: namespace-its
 spec:
   containers:
   - name: jumpod-ubuntu
